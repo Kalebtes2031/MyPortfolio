@@ -14,6 +14,8 @@ import {
   mongodb,
   git,
   figma,
+  django,
+  cpp,
   docker,
   meta,
   starbucks,
@@ -23,6 +25,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  python,
+  c,
 } from "../assets";
 
 export const navLinks = [
@@ -80,10 +84,10 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -109,8 +113,20 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "django",
+    icon: django,
+  },
+  {
+    name: "C",
+    icon: c,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Python",
+    icon: python,
   },
 ];
 
