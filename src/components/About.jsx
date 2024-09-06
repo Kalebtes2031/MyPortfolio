@@ -49,7 +49,7 @@ const About = () => {
       >
         I am a passionate Software Engineer with expertise in both frontend and backend development. I enjoy creating efficient and scalable solutions and thrive on tackling complex challenges. I'm always eager to learn new technologies, enhance my skills, and contribute to innovative projects that make a difference.
       </motion.p>
-mess
+
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

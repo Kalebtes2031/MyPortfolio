@@ -33,6 +33,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import marketplacepro from "./marketplacepro.jpg";
+import dineandbook from "./dineandbook.jpg";
+import vidshare from "./vidshare.jpg";
+
+import user from "./user.png";
+import businessman from "./businessman.png"
 
 export {
   logo,
@@ -65,6 +71,11 @@ export {
   starbucks,
   tesla,
   carrent,
+  marketplacepro,
+  dineandbook,
+  vidshare,
   jobit,
   tripguide,
+  user,
+  businessman,
 };

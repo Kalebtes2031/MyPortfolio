@@ -22,11 +22,16 @@ import {
   tesla,
   shopify,
   carrent,
+  marketplacepro,
+  dineandbook,
+  vidshare,
   jobit,
   tripguide,
   threejs,
   python,
   c,
+  user,
+  businessman,
 } from "../assets";
 
 export const navLinks = [
@@ -190,39 +195,44 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "He is disciplined, communicative, and outgoing. He excels in teamwork, adapting well to diverse environments.",
+    name: "Ermias",
+    designation: "Pastor and Head Leader ",
+    company: "Ayat Full Gospel Church",
+    image: businessman,
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "VidShare",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This mobile app, built with Expo, React Native, and Appwrite(backend), lets users upload, share, and explore videos. Users can upload videos from their devices, access their content, and discover the latest videos from others, all within a sleek and responsive interface.",
     tags: [
       {
-        name: "react",
+        name: "react-native",
         color: "blue-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "expo",
+        color: "white",
+      },
+    ],
+    image: vidshare,
+    source_code_link: "https://github.com/Kalebtes2031/NativeExpoApp",
+  },
+  {
+    name: "Market place pro",
+    description:
+      "Developed using Next.js and Bright Data's webunlocker, this web application is designed to assist users in making informed decisions. It notifies users via email when a product drops in price and helps competitors by alerting them when the product is out of stock, all managed through cron jobs.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "white",
       },
       {
         name: "mongodb",
@@ -233,51 +243,35 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: marketplacepro,
+    source_code_link: "https://github.com/Kalebtes2031/MarketPlacePro",
   },
   {
-    name: "Job IT",
+    name: "Dine and Book",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "web application lets you effortlessly browse menus, place orders, and book reservations for special occasions. Whether you’re dining in, ordering out, or planning an event, our platform makes it easy to enjoy great meals and secure your spot for memorable celebrations.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
         name: "restapi",
-        color: "green-text-gradient",
+        color: "violet-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: dineandbook,
+    source_code_link: "https://github.com/Kalebtes2031/DineAndBook",
   },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
