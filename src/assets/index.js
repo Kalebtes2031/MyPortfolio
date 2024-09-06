@@ -22,7 +22,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import django from "./tech/django.png";
 import cpp from "./tech/cpp.png";
-import c from "./tech/c.png";
+import c from "./tech/C.png";
 import python from "./tech/python.png";
 
 import meta from "./company/meta.png";
