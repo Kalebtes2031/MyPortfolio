@@ -28,6 +28,7 @@ import python from "./tech/python.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
+import hptechlogo from "./company/hptechlogo.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
@@ -36,6 +37,7 @@ import tripguide from "./tripguide.png";
 import marketplacepro from "./marketplacepro.jpg";
 import dineandbook from "./dineandbook.jpg";
 import vidshare from "./vidshare.jpg";
+import findmepic from "./findmepic.png";
 
 import user from "./user.png";
 import businessman from "./businessman.png"
@@ -69,11 +71,13 @@ export {
   meta,
   shopify,
   starbucks,
+  hptechlogo,
   tesla,
   carrent,
   marketplacepro,
   dineandbook,
   vidshare,
+  findmepic,
   jobit,
   tripguide,
   user,

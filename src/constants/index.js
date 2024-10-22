@@ -19,12 +19,14 @@ import {
   docker,
   meta,
   starbucks,
+  hptechlogo,
   tesla,
   shopify,
   carrent,
   marketplacepro,
   dineandbook,
   vidshare,
+  findmepic,
   jobit,
   tripguide,
   threejs,
@@ -89,10 +91,6 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: redux,
-  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -151,45 +149,21 @@ const experiences = [
       "Engaging in remote meetings to facilitate collaboration and communication among distributed teams.",
     ],
   },
-  // {
-  //   title: "React Native Developer",
-  //   company_name: "Tesla",
-  //   icon: tesla,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2021 - Feb 2022",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
-  // {
-  //   title: "Web Developer",
-  //   company_name: "Shopify",
-  //   icon: shopify,
-  //   iconBg: "#383E56",
-  //   date: "Jan 2022 - Jan 2023",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
-  // {
-  //   title: "Full stack Developer",
-  //   company_name: "Meta",
-  //   icon: meta,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+  {
+    title: "Corporate Venture Capital & Business Analytics Extern",
+    company_name: "HP Tech Ventures",
+    icon: hptechlogo,
+    iconBg: "#E6DEDD",
+    date: "Aug 2024 - Sep 2024",
+    points: [
+      "Leveraged data analysis techniques to evaluate startup potential, enhancing my ability to work with data-driven solutions in software engineering.",
+      "Gained experience with business models and competitive analysis, skills that are crucial for understanding user needs and translating them into technical solutions.",
+      "Collaborated remotely with a diverse team, applying agile principles to complete tasks efficiently, similar to software development workflows.",
+      "Developed strong problem-solving abilities by assessing risks and projecting financial outcomes, which can be translated into solving complex technical problems in engineering.",
+      "Presented analytical findings and actionable recommendations, enhancing my ability to communicate complex technical concepts to both technical and non-technical stakeholders.",
+      "Gained hands-on experience with tools and methodologies that can be applied in software engineering, particularly in data-driven development and decision-making processes.",
+    ],
+  },
 ];
 
 const testimonials = [
@@ -204,6 +178,33 @@ const testimonials = [
 ];
 
 const projects = [
+
+  {
+    name: "FindMe",
+    description:
+      "This is mobile app and has its own admin dashboard website. This project aims to help in search and rescue operations by leveraging facial recognition technology to assist in finding missing persons. The system supports image-based searches, filtering, and real-time notifications.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Flutter",
+        color: "white",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+    ],
+    image: findmepic,
+    source_code_link: "https://github.com/CapStoneProject-Missing-People/Missing-individual",
+  },
+
   {
     name: "VidShare",
     description:
@@ -271,7 +272,6 @@ const projects = [
     image: dineandbook,
     source_code_link: "https://github.com/Kalebtes2031/DineAndBook",
   },
-  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
