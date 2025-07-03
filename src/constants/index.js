@@ -15,10 +15,14 @@ import {
   git,
   figma,
   django,
+  expo,
+  aws,
   cpp,
   docker,
   meta,
   starbucks,
+  activetechnologies,
+  waltatechnology,
   hptechlogo,
   tesla,
   shopify,
@@ -27,6 +31,7 @@ import {
   dineandbook,
   vidshare,
   findmepic,
+  kabthyason,
   jobit,
   tripguide,
   threejs,
@@ -34,6 +39,8 @@ import {
   c,
   user,
   businessman,
+  andualem,
+  pastorermi,
 } from "../assets";
 
 export const navLinks = [
@@ -53,7 +60,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Wordpress Developer",
+    title: "Mobile App Developer",
     icon: web,
   },
   {
@@ -131,14 +138,36 @@ const technologies = [
     name: "Python",
     icon: python,
   },
+  {
+    name: "Expo",
+    icon: expo,
+  },
+  
 ];
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    company_name: "Walta Technologies",
-    icon: starbucks,
+    title: "Full Stack Developer",
+    company_name: "Active Technologies PLC",
+    icon: activetechnologies,
     iconBg: "#383E56",
+    website: "activetechet.com",
+    date: "24 Sept 2024 - present",
+    points: [
+      "Built and deployed cross-platform mobile applications using React Native and Expo. Deployed mobile apps via Expo to Google Play and App Store.",
+      "Designed and maintained responsive web applications using React.js, Next.js, and Tailwind CSS.",
+      "Developed and integrated scalable RESTful APIs with Node.js/Express.js and Django/DRF.",
+      "Managed MongoDB and PostgreSQL databases, optimizing schemas and queries for performance.",
+      "Worked in an Agile team, participating in sprint planning, code reviews, and documentation.",
+      "Ensured smooth releases, reliable performance, and long-term maintainability across both web and mobile platforms.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Walta Technologies",    
+    icon: waltatechnology,
+    iconBg: "#383E56",
+    website: "waltatechnologies.com",
     date: "8 July 2023 - 22 Sept 2023",
     points: [
       "Developed a dynamic e-commerce website using React and Next.js, optimizing server-side rendering for fast performance and SEO benefits.",
@@ -154,6 +183,7 @@ const experiences = [
     company_name: "HP Tech Ventures",
     icon: hptechlogo,
     iconBg: "#E6DEDD",
+    website: "hptechventures.com",
     date: "Aug 2024 - Sep 2024",
     points: [
       "Leveraged data analysis techniques to evaluate startup potential, enhancing my ability to work with data-driven solutions in software engineering.",
@@ -170,15 +200,48 @@ const testimonials = [
   {
     testimonial:
       "He is disciplined, communicative, and outgoing. He excels in teamwork, adapting well to diverse environments.",
-    name: "Ermias",
+    name: "Ermiyas Ayele",
     designation: "Pastor and Head Leader ",
     company: "Ayat Full Gospel Church",
-    image: businessman,
+    image: pastorermi,
+  },
+  {
+    testimonial:
+      "Kaleb is a skilled and reliable developer who consistently delivers quality work. He’s been a valuable part of our team at Active Technologies.",
+    name: "Andualem Leggesse",
+    designation: "CEO",
+    company: "Active Technologies PLC",
+    image: andualem,
   },
 ];
 
 const projects = [
 
+  {
+    name: "Kabth App",
+    description:
+      "I developed Kabth, a mobile app for customers to shop from Yason Supermarket, along with a delivery app featuring real-time map tracking. I also built an admin panel for managing orders & vendors assign delivery agents and prepare items, while delivery personnel handle fulfillment efficiently.",
+    tags: [
+      {
+        name: "React-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expo",
+        color: "white",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Django.js",
+        color: "green-text-gradient",
+      },
+    ],
+    image: kabthyason,
+    source_code_link: "https://github.com/Kalebtes2031/FinalizedYason",
+  },
   {
     name: "FindMe",
     description:

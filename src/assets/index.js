@@ -24,12 +24,16 @@ import django from "./tech/django.png";
 import cpp from "./tech/cpp.png";
 import c from "./tech/C.png";
 import python from "./tech/python.png";
+import aws from "./tech/aws.svg";
+import expo from "./tech/expo.svg"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import hptechlogo from "./company/hptechlogo.png";
 import tesla from "./company/tesla.png";
+import activetechnologies from "./activetechnologies.png";
+import waltatechnology from "./waltatechnology.jpg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -38,9 +42,12 @@ import marketplacepro from "./marketplacepro.jpg";
 import dineandbook from "./dineandbook.jpg";
 import vidshare from "./vidshare.jpg";
 import findmepic from "./findmepic.png";
+import kabthyason from "./kabthyason.png";
 
 import user from "./user.png";
 import businessman from "./businessman.png"
+import andualem from "./andualem.jpg"
+import pastorermi from "./pastorermi.jpg"
 
 export {
   logo,
@@ -56,6 +63,7 @@ export {
   figma,
   git,
   html,
+  aws,
   javascript,
   mongodb,
   nodejs,
@@ -67,6 +75,7 @@ export {
   django,
   cpp,
   c,
+  expo,
   python,
   meta,
   shopify,
@@ -78,8 +87,13 @@ export {
   dineandbook,
   vidshare,
   findmepic,
+  kabthyason,
   jobit,
   tripguide,
   user,
   businessman,
+  activetechnologies,
+  waltatechnology,
+  andualem,
+  pastorermi,
 };
