@@ -45,11 +45,11 @@ const Navbar = () => {
           <img src="logos.png" alt='logo' className='w-9 h-9 object-cover rounded-full' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Kaleb &nbsp;
-            <span className='sm:block hidden'> | Fullstack developer</span>
+            <span className='md:block hidden'> | Fullstack developer</span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden md:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -63,7 +63,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='md:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
             alt='menu'
