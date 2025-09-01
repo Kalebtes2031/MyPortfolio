@@ -41,6 +41,7 @@ import {
   businessman,
   andualem,
   pastorermi,
+  kabthchatbot,
 } from "../assets";
 
 export const navLinks = [
@@ -241,6 +242,27 @@ const projects = [
     ],
     image: kabthyason,
     source_code_link: "https://github.com/Kalebtes2031/FinalizedYason",
+  },
+  {
+    name: "AI-Automation Chatbot",
+    description:
+      "This is AI-Automation Chatbot, a web app with a React frontend and Django backend, enabling users to chat with an intelligent AI assistant. It features real-time, context-aware conversations, Markdown-rendered responses, and optional user authentication to save chat history.",
+    tags: [
+      {
+        name: "Hugging Face's LLM",
+        color: "white",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Django.js",
+        color: "green-text-gradient",
+      },
+    ],
+    image: kabthchatbot,
+    source_code_link: "https://github.com/Kalebtes2031/Chatbot",
   },
   {
     name: "FindMe",
