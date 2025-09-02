@@ -64,12 +64,19 @@ const Navbar = () => {
         </ul>
 
         <div className='md:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+          <button
+            type='button'
+            aria-label={toggle ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={toggle}
+            className='p-1'
             onClick={() => setToggle(!toggle)}
-          />
+          >
+            <img
+              src={toggle ? close : menu}
+              alt='menu icon'
+              className='w-[28px] h-[28px] object-contain'
+            />
+          </button>
 
           <div
             className={`${

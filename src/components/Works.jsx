@@ -50,7 +50,8 @@ const ProjectCard = ({
           <div className="relative w-full aspect-[16/9] min-h-[180px]">
             <img
               src={image}
-              alt="project_image"
+              alt={`${name} preview`}
+              loading="lazy"
               className="w-full h-full object-cover rounded-2xl"
             />
 
@@ -99,7 +100,8 @@ const ProjectCard = ({
           <div className="relative w-full aspect-[16/9] min-h-[200px]">
             <img
               src={image}
-              alt="project_image"
+              alt={`${name} preview`}
+              loading="lazy"
               className="w-full h-full object-cover rounded-2xl"
             />
 
