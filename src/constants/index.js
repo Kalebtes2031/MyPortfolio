@@ -236,7 +236,7 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "Django.js",
+        name: "Django",
         color: "green-text-gradient",
       },
     ],
@@ -257,7 +257,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "Django.js",
+        name: "Django",
         color: "green-text-gradient",
       },
     ],

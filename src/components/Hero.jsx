@@ -26,10 +26,10 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center w-[200px] md:w-[280px] lg:w-[400px] border-8 bg-white h-[200px] md:h-[280px] lg:h-[400px] rounded-full">
           <img
-            className="w-[200px] md:w-[280px] lg:w-[400px] border-8 h-[200px] md:h-[280px] lg:h-[400px] object-cover rounded-full"
-            src="graduation1.jpg"
+            className=" object-contain w-full h-full rounded-full"
+            src="professionalphotogemni.png"
           />
         </div>
         {/* <ComputersCanvas /> */}
