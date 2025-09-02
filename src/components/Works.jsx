@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -16,44 +16,63 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if the device is a mobile device
+    const checkIsMobile = () => {
+      const isMobileDevice = window.innerWidth <= 768;
+      setIsMobile(isMobileDevice);
+    };
+
+    // Initial check
+    checkIsMobile();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', checkIsMobile);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('resize', checkIsMobile);
+    };
+  }, []);
+
   return (
     <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="w-full sm:w-[360px] flex justify-center"
+      variants={!isMobile ? fadeIn("up", "spring", index * 0.5, 0.75) : {}}
+      className="w-full sm:w-[360px]"
     >
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl w-full min-h-[300px] sm:min-h-[400px] flex flex-col"
-      >
-        <div className="relative w-full aspect-video">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
+      {/* Disable tilt on mobile devices for better performance */}
+      {isMobile ? (
+        <div className="bg-tertiary p-5 rounded-2xl w-full h-full">
+          {/* ✅ Responsive aspect ratio for image container */}
+          <div className="relative w-full aspect-[16/9]">
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl"
+            />
+
+            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="source code"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="mt-5 flex-1 flex flex-col justify-between">
-          <h3 className="text-white font-bold text-[20px] sm:text-[24px]">
-            {name}
-          </h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <div className="mt-5">
+            <h3 className="text-white font-bold text-[20px] sm:text-[24px]">
+              {name}
+            </h3>
+            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          </div>
 
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
@@ -66,14 +85,63 @@ const ProjectCard = ({
             ))}
           </div>
         </div>
-      </Tilt>
+      ) : (
+        <Tilt
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className="bg-tertiary p-5 rounded-2xl w-full h-full"
+        >
+          {/* ✅ Responsive aspect ratio for image container */}
+          <div className="relative w-full aspect-[16/9]">
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl"
+            />
+
+            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="source code"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-5">
+            <h3 className="text-white font-bold text-[20px] sm:text-[24px]">
+              {name}
+            </h3>
+            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          </div>
+
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        </Tilt>
+      )}
     </motion.div>
   );
 };
 
 const Works = () => {
   return (
-    <section className="mt-20">
+    <section className="mt-10 sm:mt-20 px-4 sm:px-0">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -93,7 +161,7 @@ const Works = () => {
       </div>
 
       {/* ✅ Center & wrap cards nicely on all screen sizes */}
-      <div className="mt-16 flex flex-wrap justify-center gap-7">
+      <div className="mt-10 sm:mt-16 flex flex-wrap justify-center gap-4 sm:gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
