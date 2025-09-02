@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -39,14 +40,14 @@ const ProjectCard = ({
 
   return (
     <motion.div
-      variants={!isMobile ? fadeIn("up", "spring", index * 0.5, 0.75) : {}}
+      variants={fadeIn("up", "spring", (isMobile ? 0 : index * 0.5), 0.6)}
       className="w-full sm:w-[360px]"
     >
       {/* Disable tilt on mobile devices for better performance */}
       {isMobile ? (
         <div className="bg-tertiary p-5 rounded-2xl w-full h-full">
           {/* ✅ Responsive aspect ratio for image container */}
-          <div className="relative w-full aspect-[16/9]">
+          <div className="relative w-full aspect-[16/9] min-h-[180px]">
             <img
               src={image}
               alt="project_image"
@@ -95,7 +96,7 @@ const ProjectCard = ({
           className="bg-tertiary p-5 rounded-2xl w-full h-full"
         >
           {/* ✅ Responsive aspect ratio for image container */}
-          <div className="relative w-full aspect-[16/9]">
+          <div className="relative w-full aspect-[16/9] min-h-[200px]">
             <img
               src={image}
               alt="project_image"
@@ -137,6 +138,20 @@ const ProjectCard = ({
       )}
     </motion.div>
   );
+};
+
+ProjectCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  image: PropTypes.string.isRequired,
+  source_code_link: PropTypes.string.isRequired,
 };
 
 const Works = () => {
