@@ -19,7 +19,7 @@ const ProjectCard = ({
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="w-full sm:w-[360px]"
+      className="w-full sm:w-[360px] flex justify-center"
     >
       <Tilt
         options={{
@@ -27,16 +27,14 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl w-full"
+        className="bg-tertiary p-5 rounded-2xl w-full min-h-[300px] sm:min-h-[400px] flex flex-col"
       >
-        {/* ✅ Responsive aspect ratio for image container */}
-        <div className="relative w-full aspect-[16/9]">
+        <div className="relative w-full aspect-video">
           <img
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
-
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
@@ -51,22 +49,22 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 flex-1 flex flex-col justify-between">
           <h3 className="text-white font-bold text-[20px] sm:text-[24px]">
             {name}
           </h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
         </div>
       </Tilt>
     </motion.div>
