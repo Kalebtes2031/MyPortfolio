@@ -14,7 +14,7 @@ This repository contains the source for a developer portfolio showcasing project
 
 ## Demo
 
-Live demo: (add your hosted URL here)
+Live demo: ([https://kalebayele-portfolio.vercel.app](https://kalebayele-portfolio.vercel.app))
 
 Screenshot: (add an illustrative screenshot in `public/` and link it here)
 
@@ -128,6 +128,6 @@ Please keep changes small and focused. For larger work, open an issue first so w
 
 - Name: Kaleb Tesfaye Ayele
 - Email: kalebtesfaye2031@gmail.com
-- Portfolio: (link to hosted site)
+- Portfolio: ([https://kalebayele-portfolio.vercel.app](https://kalebayele-portfolio.vercel.app))
 
 ---
