@@ -1,6 +1,6 @@
-# MyPortfolio — Personal Portfolio
+# MyPortfolio - Personal Portfolio
 
-A clean, responsive personal portfolio built with React, Vite and Tailwind CSS — featuring 3D canvas scenes, smooth animations, and an integrated contact form.
+A clean, responsive personal portfolio built with React, Vite and Tailwind CSS - featuring 3D canvas scenes, smooth animations, and an integrated contact form.
 
 This repository contains the source for a developer portfolio showcasing projects, experience, and contact information.
 
@@ -15,8 +15,6 @@ This repository contains the source for a developer portfolio showcasing project
 ## Demo
 
 Live demo: ([https://kalebayele-portfolio.vercel.app](https://kalebayele-portfolio.vercel.app))
-
-Screenshot: (add an illustrative screenshot in `public/` and link it here)
 
 ## Features
 
@@ -67,23 +65,23 @@ Open http://localhost:5173 (or the address shown in the terminal).
 
 All scripts are declared in `package.json`:
 
-- `npm run dev` — start development server with HMR (Vite)
-- `npm run build` — build production assets
-- `npm run preview` — locally preview the production build
-- `npm run lint` — run ESLint across the project
+- `npm run dev` - start development server with HMR (Vite)
+- `npm run build` - build production assets
+- `npm run preview` - locally preview the production build
+- `npm run lint` - run ESLint across the project
 
 ## Project structure
 
 Top-level source layout (key files/folders):
 
-- `index.html` — app entry HTML
-- `src/` — React source code
-	- `main.jsx` — app bootstrap
-	- `App.jsx` — root component
-	- `components/` — UI and canvas components (Hero, Navbar, About, Works, Experience, Contact, canvas/*)
-	- `assets/` — images and icons
-- `public/` — static assets (textures, images)
-- `package.json` — scripts and dependencies
+- `index.html` - app entry HTML
+- `src/` - React source code
+	- `main.jsx` - app bootstrap
+	- `App.jsx` - root component
+	- `components/` - UI and canvas components (Hero, Navbar, About, Works, Experience, Contact, canvas/*)
+	- `assets/` - images and icons
+- `public/` - static assets (textures, images)
+- `package.json` - scripts and dependencies
 
 Adjust paths and names as needed for your fork.
 
@@ -96,7 +94,7 @@ npm run build
 # then deploy the generated `dist` folder with your preferred service
 ```
 
-Vercel and Netlify both have simple integrations for Vite apps — connect your repository and set the build command to `npm run build` and publish directory to `dist`.
+Vercel and Netlify both have simple integrations for Vite apps - connect your repository and set the build command to `npm run build` and publish directory to `dist`.
 
 ## Environment & Secrets
 
