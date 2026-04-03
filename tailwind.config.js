@@ -21,6 +21,17 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      keyframes: {
+        scan: {
+          '0%': { top: '0%', opacity: 0 },
+          '50%': { opacity: 1 },
+          '100%': { top: '100%', opacity: 0 },
+        }
+      },
+      animation: {
+        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        scan: 'scan 2s linear infinite',
+      },
     },
   },
   plugins: [],

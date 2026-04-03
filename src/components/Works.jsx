@@ -160,8 +160,8 @@ const Works = () => {
   return (
     <section className="mt-10 sm:mt-20 px-4 sm:px-0">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText}`}>What I have done so far</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -177,7 +177,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      {/* ✅ Center & wrap cards nicely on all screen sizes */}
+      {/* Center & wrap cards nicely on all screen sizes */}
       <div className="mt-10 sm:mt-16 flex flex-wrap justify-center gap-4 sm:gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />

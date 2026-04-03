@@ -25,8 +25,14 @@ import django from "./tech/django.png";
 import cpp from "./tech/cpp.png";
 import c from "./tech/C.png";
 import python from "./tech/python.png";
-import aws from "./tech/aws.svg";
+import aws from "./tech/aws.png";
 import expo from "./tech/expo.svg"
+import postgresql from "./tech/postgresql.png"
+import nextjs from "./tech/nextjs.png"
+import mysql from "./tech/mysql.png"
+import firebase from "./tech/firebase.png"
+import stripe from "./tech/stripe.png"
+import reactnative from "./tech/reactnative.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -44,8 +50,12 @@ import dineandbook from "./dineandbook.jpg";
 import vidshare from "./vidshare.jpg";
 import findmepic from "./findmepic.png";
 import kabthyason from "./kabthyason.png";
+import connectopia from "./connectopia.png";
+import popcornly from "./popcornly.png";
+import pms from "./pms.png";
+import artwalldesigner from "./artwalldesigner.png";
 
-import user from "./user.png";
+import user from "./user.png"
 import businessman from "./businessman.png"
 import andualem from "./andualem.jpg"
 import pastorermi from "./pastorermi.jpg"
@@ -77,6 +87,12 @@ export {
   cpp,
   c,
   expo,
+  postgresql,
+  nextjs,
+  mysql,
+  firebase,
+  stripe,
+  reactnative,
   python,
   meta,
   shopify,
@@ -98,4 +114,8 @@ export {
   andualem,
   pastorermi,
   kabthchatbot,
+  connectopia,
+  popcornly,
+  artwalldesigner,
+  pms,
 };

@@ -8,7 +8,7 @@ import {
   html,
   css,
   reactjs,
-  redux,
+  nextjs,
   tailwind,
   nodejs,
   mongodb,
@@ -19,29 +19,28 @@ import {
   aws,
   cpp,
   docker,
-  meta,
-  starbucks,
+  firebase,
+  postgresql,
+  mysql,
+  stripe,
+  reactnative,
   activetechnologies,
   waltatechnology,
   hptechlogo,
-  tesla,
-  shopify,
-  carrent,
   marketplacepro,
   dineandbook,
   vidshare,
   findmepic,
   kabthyason,
-  jobit,
-  tripguide,
-  threejs,
   python,
   c,
-  user,
-  businessman,
   andualem,
   pastorermi,
   kabthchatbot,
+  artwalldesigner,
+  popcornly,
+  connectopia,
+  pms,
 } from "../assets";
 
 export const navLinks = [
@@ -80,52 +79,91 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "React JS",
+    icon: reactjs,
   },
   {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Next.js",
+    icon: nextjs,
   },
   {
     name: "TypeScript",
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
+
   {
-    name: "Node JS",
+    name: "Node.js",
     icon: nodejs,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+
+  {
+    name: "React Native",
+    icon: reactnative,
+  },
+  {
+    name: "Expo",
+    icon: expo,
+  },
+
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "MySQL",
+    icon: mysql,
   },
   {
-    name: "git",
+    name: "Firebase",
+    icon: firebase,
+  },
+
+  {
+    name: "Stripe",
+    icon: stripe,
+  },
+
+  {
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
+
   {
-    name: "django",
-    icon: django,
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "C",
@@ -139,11 +177,6 @@ const technologies = [
     name: "Python",
     icon: python,
   },
-  {
-    name: "Expo",
-    icon: expo,
-  },
-  
 ];
 
 const experiences = [
@@ -165,7 +198,7 @@ const experiences = [
   },
   {
     title: "Frontend Developer",
-    company_name: "Walta Technologies",    
+    company_name: "Walta Technologies",
     icon: waltatechnology,
     iconBg: "#383E56",
     website: "waltatechnologies.com",
@@ -218,141 +251,142 @@ const testimonials = [
 
 const projects = [
 
+  // popcornly
+  {
+    name: "Popcornly",
+    description:
+      "Production-ready mobile movie discovery app with AI-powered recommendations, Firebase backend, authentication, and CI-tested scalable architecture.",
+    tags: [
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Firebase", color: "pink-text-gradient" },
+      { name: "OpenAI", color: "white" },
+      { name: "Expo", color: "green-text-gradient" },
+    ],
+    image: popcornly,
+    source_code_link: "https://github.com/Kalebtes2031/Popcornly",
+  },
+  // artwalldesigner
+  {
+    name: "Art Wall Designer",
+    description:
+      "Interactive e-commerce platform allowing users to visualize artwork on their walls with drag-and-drop editing, real-time customization, Stripe payments, and role-based dashboards.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "white" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "MongoDB", color: "pink-text-gradient" },
+    ],
+    image: artwalldesigner,
+    source_code_link: "https://artwalldesigner.onrender.com/",
+  },
+  // pms
+  {
+    name: "Project Management System",
+    description:
+      "Fullstack SaaS-style platform for managing teams and workflows with role-based access, Kanban boards, and scalable REST API architecture.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Django", color: "green-text-gradient" },
+      { name: "TanStack Query", color: "pink-text-gradient" },
+      { name: "Tailwind", color: "white" },
+    ],
+    image: pms,
+    source_code_link: "#",
+  },
+  // connectopia
+  {
+    name: "Connectopia",
+    description:
+      "AI-powered matchmaking platform with real-time messaging, intelligent preference-based matching, and production-grade observability, testing, and CI/CD pipelines.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "Socket.IO", color: "white" },
+      { name: "PostgreSQL", color: "pink-text-gradient" },
+    ],
+    image: connectopia,
+    source_code_link: "https://github.com/Kalebtes2031/connectopia",
+  },
+  // kabth App
   {
     name: "Kabth App",
     description:
-      "I developed Kabth, a mobile app for customers to shop from Yason Supermarket, along with a delivery app featuring real-time map tracking. I also built an admin panel for managing orders & vendors assign delivery agents and prepare items, while delivery personnel handle fulfillment efficiently.",
+      "Real-world e-commerce and delivery ecosystem with customer mobile app, real-time order tracking, and admin dashboard for managing vendors and logistics.",
     tags: [
-      {
-        name: "React-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Expo",
-        color: "white",
-      },
-      {
-        name: "Firebase",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Django",
-        color: "green-text-gradient",
-      },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Firebase", color: "pink-text-gradient" },
+      { name: "Django", color: "green-text-gradient" },
+      { name: "Expo", color: "white" },
     ],
     image: kabthyason,
     source_code_link: "https://github.com/Kalebtes2031/FinalizedYason",
   },
+
   {
-    name: "AI-Automation Chatbot",
+    name: "AI Automation Chatbot",
     description:
-      "This is AI-Automation Chatbot, a web app with a React frontend and Django backend, enabling users to chat with an intelligent AI assistant. It features real-time, context-aware conversations, Markdown-rendered responses, and optional user authentication to save chat history.",
+      "Fullstack AI chatbot with real-time, context-aware conversations, Markdown-rendered responses, and persistent chat history using LLM integration.",
     tags: [
-      {
-        name: "Hugging Face's LLM",
-        color: "white",
-      },
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Django",
-        color: "green-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Django", color: "green-text-gradient" },
+      { name: "Hugging Face", color: "white" },
     ],
     image: kabthchatbot,
     source_code_link: "https://github.com/Kalebtes2031/Chatbot",
   },
+
+  // Optional (keep if you want more projects displayed)
+
   {
     name: "FindMe",
     description:
-      "This is mobile app and has its own admin dashboard website. This project aims to help in search and rescue operations by leveraging facial recognition technology to assist in finding missing persons. The system supports image-based searches, filtering, and real-time notifications.",
+      "Facial recognition-based search and rescue system with image matching, filtering, and real-time notifications for locating missing persons.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Flutter",
-        color: "white",
-      },
-      {
-        name: "Firebase",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "green-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Flutter", color: "white" },
+      { name: "Firebase", color: "pink-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
     ],
     image: findmepic,
-    source_code_link: "https://github.com/CapStoneProject-Missing-People/Missing-individual",
+    source_code_link:
+      "https://github.com/CapStoneProject-Missing-People/Missing-individual",
   },
 
   {
     name: "VidShare",
     description:
-      "This mobile app, built with Expo, React Native, and Appwrite(backend), lets users upload, share, and explore videos. Users can upload videos from their devices, access their content, and discover the latest videos from others, all within a sleek and responsive interface.",
+      "Mobile video sharing platform enabling users to upload, explore, and manage content with a modern UI and backend powered by Appwrite.",
     tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "appwrite",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "expo",
-        color: "white",
-      },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Appwrite", color: "pink-text-gradient" },
+      { name: "Expo", color: "white" },
     ],
     image: vidshare,
     source_code_link: "https://github.com/Kalebtes2031/NativeExpoApp",
   },
+
   {
-    name: "Market place pro",
+    name: "Marketplace Pro",
     description:
-      "Developed using Next.js and Bright Data's webunlocker, this web application is designed to assist users in making informed decisions. It notifies users via email when a product drops in price and helps competitors by alerting them when the product is out of stock, all managed through cron jobs.",
+      "Automated price tracking platform that monitors product changes and sends email alerts using cron jobs and web scraping tools.",
     tags: [
-      {
-        name: "Next.js",
-        color: "white",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "white" },
+      { name: "MongoDB", color: "green-text-gradient" },
+      { name: "Tailwind", color: "pink-text-gradient" },
     ],
     image: marketplacepro,
     source_code_link: "https://github.com/Kalebtes2031/MarketPlacePro",
   },
+
   {
     name: "Dine and Book",
     description:
-      "web application lets you effortlessly browse menus, place orders, and book reservations for special occasions. Whether you’re dining in, ordering out, or planning an event, our platform makes it easy to enjoy great meals and secure your spot for memorable celebrations.",
+      "Restaurant platform for browsing menus, placing orders, and booking reservations with a seamless user experience.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "django",
-        color: "green-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "violet-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Django", color: "green-text-gradient" },
+      { name: "REST API", color: "violet-text-gradient" },
+      { name: "Tailwind", color: "pink-text-gradient" },
     ],
     image: dineandbook,
     source_code_link: "https://github.com/Kalebtes2031/DineAndBook",
