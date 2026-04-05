@@ -102,7 +102,7 @@ const Hero = () => {
       <div className="pl-0 md:pl-32 container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center z-10">
         
         {/* Left Side: Content */}
-        <div className="space-y-6">
+        <div className="space-y-6 mt-20 md:mt-0 ml-4 md:ml-0">
           <div className="inline-block px-4 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-400 text-sm font-medium tracking-wider uppercase">
             Fullstack Software Engineer | Creating the Digital Future
           </div>
@@ -111,7 +111,7 @@ const Hero = () => {
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">Kaleb.</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-400 max-w-lg leading-relaxed">
+          <p className="text-md  md:text-2xl text-gray-400 max-w-lg leading-relaxed">
             I develop different types of software solutions with a focus on performance and modern design.
           </p>
 
@@ -153,7 +153,7 @@ const Hero = () => {
             <div className="absolute -bottom-4 -left-8 bg-black/80 backdrop-blur-md p-4 rounded-xl border border-white/10 hidden md:block">
               <code className="text-purple-400 text-xs">
                 const Kaleb = () =&gt; &#123; <br />
-                &nbsp;&nbsp;return &lt;Innovation /&gt;; <br />
+                &nbsp;&nbsp;return &lt;Creativity /&gt;; <br />
                 &#125;
               </code>
             </div>
