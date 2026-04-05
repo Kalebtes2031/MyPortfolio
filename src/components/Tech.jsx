@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
 const TechCard = ({ index, name, icon }) => {
+  const [isMobile, setIsMobile] = useState(false);
+  
+    useEffect(() => {
+      // Check if the device is a mobile device
+      const checkIsMobile = () => {
+        const isMobileDevice = window.innerWidth <= 768;
+        setIsMobile(isMobileDevice);
+      };
+  
+      // Initial check
+      checkIsMobile();
+  
+      // Add event listener for window resize
+      window.addEventListener('resize', checkIsMobile);
+  
+      // Cleanup
+      return () => {
+        window.removeEventListener('resize', checkIsMobile);
+      };
+    }, []);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      // i want delay to show only for big screen not on mobiles
+      transition={{ duration: 0.5, delay: isMobile ? 0 : index * 0.1 }}
       whileHover={{ y: -10 }}
       className='group relative w-28 h-32 flex flex-col items-center justify-center'
     >

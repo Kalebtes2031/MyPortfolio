@@ -134,7 +134,7 @@ const Hero = () => {
 
         {/* Right Side: Portrait Container */}
         <div className="relative flex justify-center lg:justify-end">
-          <div className="relative w-72 h-72 md:w-[450px] md:h-[450px]">
+          <div className="relative w-72 h-72 mb-6 md:mb-0 md:w-[450px] md:h-[450px]">
             {/* Animated Ring */}
             <div className="absolute inset-0 rounded-full border-2 border-dashed border-purple-500/30 animate-[spin_20s_linear_infinite]"></div>
             

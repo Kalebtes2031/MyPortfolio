@@ -49,7 +49,7 @@ const About = () => {
         <div className="absolute -left-20 top-0 w-64 h-64 bg-[#915EFF]/10 blur-[120px] rounded-full -z-10" />
         
         <motion.div variants={textVariant()}>
-          <h2 className={`${styles.sectionHeadText} mt-6`}>Introduction</h2>
+          <h2 className={`${styles.sectionHeadText} mt-12 md:mt-6`}>Introduction</h2>
         </motion.div>
 
         <motion.p
