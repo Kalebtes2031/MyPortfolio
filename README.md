@@ -14,7 +14,7 @@ This repository contains the source for a developer portfolio showcasing project
 
 ## Demo
 
-Live demo: ([https://kalebayele-portfolio.vercel.app](https://kalebayele-portfolio.vercel.app))
+Live demo: ([https://kalebayele.com](https://kalebayele.com))
 
 ## Features
 
